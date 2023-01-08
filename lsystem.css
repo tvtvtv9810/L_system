@@ -1,0 +1,25 @@
+/* メッセージの色 */
+#message {
+  color: #0000CC;
+}
+
+/* テキスト入力欄 */
+input[type="text"] {
+  width: 500px;
+}
+
+/* 数値入力欄 */
+input[type="number"] {
+    width: 50px;
+}
+
+/* キャンバス */
+canvas{
+  background-color: #000000;
+}
+
+/* ログ */
+textarea {
+  width: 200px;
+  height: 600px;
+}

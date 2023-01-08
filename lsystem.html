@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lシステム</title>
+    <script src="./lsystem.js"></script>
+    <link href="./lsystem.css" rel="stylesheet">
+  </head>
+  <body onload="init()">
+    <p>L システム</p>
+    初期状態：<input type="text" id="rule0" value=""><br>
+    開始位置：（
+      <input type="number" id="x0" value="0">
+      <input type="number" id="y0" value="0">
+    ）
+    開始角度：<input type="number" id="a0" value="0"><br>
+    <br>
+    変換ルール：<input type="text" id="rules" value=""><br>
+    回転角度：<input type="number" id="a" value="0">
+    進行距離：<input type="number" id="d" value="0">
+    ステップ数：<input type="number" id="num" value="0">
+    <input type="checkbox" id="last" checked>最終ステップのみ描画
+    <hr>
+    <input type="button" value="サンプル１" onclick="setSample(0)">
+    <input type="button" value="サンプル２" onclick="setSample(1)">
+    <input type="button" value="サンプル３" onclick="setSample(2)">
+    <input type="button" value="サンプル４" onclick="setSample(3)">
+    <input type="button" value="描画" onclick="startDraw()">
+    <input type="checkbox" id="hispeed">高速
+    <span id="message"></span>
+    <hr>
+    <canvas id="image" width="600" height="600"></canvas>
+    <textarea id="log"></textarea>
+
+  </body>
+
+</html>
+
+
